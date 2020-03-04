@@ -1,11 +1,11 @@
-# @hyperswarm/replicator
+# @prm3theus /replicator-web
 
-Replicate data structures easily using hyperswarm
+Replicate data structures easily using hyperswarm-`web`
 
 ## Install
 
 ```js
-npm install @hyperswarm/replicator
+npm install git+https://git@github.com/prm3theus/replicator-web
 ```
 
 ## Usage
@@ -17,7 +17,8 @@ them using the hyperswarm replicator.
 const replicate = require('@hyperswarm/replicator')
 
 const swarm = replicate(aHypercore, {
-  live: true // passed to .replicate
+  live: true, // passed to .replicate
+  ws: 'ws://localhost:4977' // use with `hyperswarm-web`
 })
 
 // swarm is a hyperswarm instance that replicates the passed in instance
