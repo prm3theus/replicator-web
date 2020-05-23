@@ -18,7 +18,7 @@ const replicate = require('@hyperswarm/replicator')
 
 const swarm = replicate(aHypercore, {
   live: true, // passed to .replicate
-  ws: 'ws://localhost:4977' // use with `hyperswarm-web`
+  wsProxy: 'ws://localhost:4977' // use with `hyperswarm-web`
 })
 
 // swarm is a hyperswarm instance that replicates the passed in instance

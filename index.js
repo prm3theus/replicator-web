@@ -1,4 +1,4 @@
-const hyperswarm = require('hyperswarm')
+const hyperswarm = require('hyperswarm-web')
 const pump = require('pump')
 
 module.exports = replicator
@@ -7,6 +7,7 @@ function replicator (r, opts) {
   if (!opts) opts = {}
 
   const swarm = hyperswarm({
+    wsProxy: !!opts.wsProxy,
     announceLocalAddress: !!opts.announceLocalAddress
   })
 

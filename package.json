@@ -10,6 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "hyperswarm": "^2.4.0",
+    "hyperswarm-web": "^1.0.3",
     "pump": "^3.0.0"
   },
   "devDependencies": {
